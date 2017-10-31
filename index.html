@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -7,19 +7,17 @@
     <!-- Meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108998772-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-108998772-1');
-</script>
 
     <!-- Title -->
     <title>Rajashekar Manthena | Resume</title>
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108998772-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-108998772-1');
+    </script>
     <meta name="theme-color" content="#00aff4">
 
     <!-- Favicons -->
@@ -44,11 +42,6 @@
     <link rel="stylesheet" href="assets/styleswitcher/styleswitcher.css" />
     <link href="dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
-    <style>
-        .img {
-            width: 35%;
-        }
-    </style>
 </head>
 
 <body class="header-vertical">
@@ -400,16 +393,30 @@
             <!-- Content -->
             <div class="container container-wide">
                 <h6 class="margin-b-50">Projects</h6>
-                <h1 class="margin-b-0"><strong>Information Technology</strong> The B.Sc.I.T <strong><a href="http://informationtechnology.somee.com/" target="_blank" style="color:darkslateblue;text-decoration:underline">Website</a></strong></h1>
-                <h5 class="text-muted margin-b-60">Website</h5>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h1 class="margin-b-0"><a href="http://infotech.freeasphost.net/" target="_blank" title="Information Technology - The B.Sc.I.T Website" class="linkcolor"><strong>Information Technology</strong></a></h1>
+                        <h5 class="text-muted margin-b-60">Website</h5>
+                        <div class="col-md-12">
+                            <a href="assets/img/25.jpg" data-lightbox="road" data-title="IT LOGO">
+                                <img src="assets/img/25.jpg" class="img-responsive" style="border-radius:5px;box-shadow:#154a63 20px 10px 15px;" data-animation="fadeInDown" />
+                            </a>
+                            <a href="assets/img/5.jpg" data-lightbox="road" data-title="Pages"></a>
+                            <a href="assets/img/24.jpg" data-lightbox="road" data-title="Responsive"></a>
+                        </div>
+                    </div>
 
-                <div class="col-md-12">
-                    <a href="assets/img/25.jpg" data-lightbox="road" data-title="IT LOGO">
-                        <img src="assets/img/25.jpg" class="img-responsive" style="border-radius:5px;box-shadow:#154a63 20px 10px 15px;" data-animation="fadeInDown" />
-                    </a>
-                    <a href="assets/img/5.jpg" data-lightbox="road" data-title="Pages"></a>
-                    <a href="assets/img/24.jpg" data-lightbox="road" data-title="Responsive"></a>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h1 class="margin-b-0"><a href="http://sw4u.freeasphost.net/" target="_blank" title="Special Website for you - SW4U is birthday present for your loved one's, present something different.." class="linkcolor"><strong>Special Website for you</strong></a></h1>
+                        <h5 class="text-muted margin-b-60">Website</h5>
+                        <div class="col-md-12">
+                            <a href="assets/img/sw4u.jpg" data-lightbox="road1" data-title="SW4U LOGO">
+                                <img src="assets/img/sw4u.jpg" class="img-responsive" style="border-radius:5px;box-shadow:#154a63 20px 10px 15px;" data-animation="fadeInDown" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
 
@@ -595,22 +602,22 @@
 
     <!-- JS Plugins -->
     <script>
-        window.paceOptions = {
-            target: '#page-loader',
-            ajax: false
-        };
+                window.paceOptions = {
+                    target: '#page-loader',
+                    ajax: false
+                };
     </script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/blueimp-gallery.min.js"></script>
     <script>
-        document.getElementById('links').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = { index: link, event: event },
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
+                document.getElementById('links').onclick = function (event) {
+                    event = event || window.event;
+                    var target = event.target || event.srcElement,
+                        link = target.src ? target.parentNode : target,
+                        options = { index: link, event: event },
+                        links = this.getElementsByTagName('a');
+                    blueimp.Gallery(links, options);
+                };
     </script>
     <!-- JS Core -->
     <script src="assets/js/core.min.js"></script>
@@ -622,30 +629,30 @@
 
     <script src="dist/js/lightbox.js"></script>
     <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
+                $(document).ready(function () {
+                    // Add smooth scrolling to all links
+                    $("a").on('click', function (event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                            // Store hash
+                            var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function () {
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
                     });
-                } // End if
-            });
-        });
+                });
     </script>
 
 </body>
